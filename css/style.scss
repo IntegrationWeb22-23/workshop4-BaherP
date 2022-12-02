@@ -1,12 +1,87 @@
-$color: #3a0a1d;
+@import '../css/functions.scss';
+@import '../css/mixins.scss';
+@import '../css/variable.scss';
+@font-face {
+    font-family: 'lacuna_regularregular';
+    src: url('/fontface/Lacuna-Regular-fontfacekit/fonts/lacuna_regular_macroman/lacuna-webfont.eot');
+    src: url('/fontface/Lacuna-Regular-fontfacekit/fonts/lacuna_regular_macroman/lacuna-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/fontface/Lacuna-Regular-fontfacekit/fonts/lacuna_regular_macroman/lacuna-webfont.woff2') format('woff2'),
+         url('/fontface/Lacuna-Regular-fontfacekit/fonts/lacuna_regular_macroman/lacuna-webfont.woff') format('woff'),
+         url('/fontface/Lacuna-Regular-fontfacekit/fonts/lacuna_regular_macroman/lacuna-webfont.ttf') format('truetype'),
+         url('/fontface/Lacuna-Regular-fontfacekit/fonts/lacuna_regular_macroman/lacuna-webfont.svg#lacuna_regularregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
 
 .bg {
     background-color: $color;
     height: 23rem;
 }
-.text {
-    color: #eaeaea;
-}
 .bi{
     color:#f0bd01 ;
+}
+.bgF{
+    background-color: #e4bc01;
+    height: 10rem;
+}
+.bi-facebook{
+    color: $colorBi;
+    font-size: $fontS;
+    
+}
+.bi-instagram{
+    color: $colorBi;
+    font-size: $fontS;
+    
+}
+.bi-twitter{
+    color: $colorBi;
+    font-size: $fontS;
+}
+.navbar{
+    background-color:$colorNav;
+    // height: 7.62rem;
+    padding: 0 !important;
+}
+.nav-link{
+    color: $colorBi;
+    font-size: 2.25rem;
+    font-family:'lacuna_regularregular',sans-serif;
+}
+.navbar-brand{
+    background-color:$colorBi ;
+    padding-top: 0.81rem ;
+    padding-bottom: 0.81rem;
+    padding-left: 1.31rem;
+    padding-right: 1.31rem;
+    
+}
+.show{
+    width: fit-content !important;
+    height: fit-content !important;
+}
+.navbar-toggler{
+    color: azure !important;
+    background-color: #f0bd01;
+}
+.bi-quote{
+    font-size: 3rem;
+}
+
+.text{
+    font-size: 1.2rem;
+    font-family: "lacuna_regularregular";
+}
+.text-section2 {
+    color: #eaeaea;
+    @extend.text;
+}
+.text-section3{
+    @extend.text;
+    color: $color;
+}
+.btn{
+    background-color:#e4bc01;
+    bottom: -2.6rem !important;
 }
